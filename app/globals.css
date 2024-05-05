@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-hsl: 185, 100%, 98%;
+  --background-hsl: 0, 0%, 5%;
+}
+
+body {
+  color: hsl(var(--foreground-hsl));
+  background: hsl(var(--background-hsl));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
